@@ -16,8 +16,6 @@ function App() {
   const [history,setHistory] = useState([]);
 
   useEffect(()=>{
-    console.log('a',a);
-    console.log('matchA(a)',matchA(a));
     setB(matchA(a))
   },[a])
 
@@ -32,6 +30,7 @@ function App() {
   const onFinish = (values) => {
     values.id = new Date().valueOf();
     history.push(values);
+    form.resetFields();
     fsUtils.writeJson('history.json',history,()=>{
       fsUtils.readJson('history.json',setHistory)
     })
@@ -251,7 +250,6 @@ function matchC(c){
     
     return t;
   },[]);
-  console.log('l',l);
   return l;
 }
 
