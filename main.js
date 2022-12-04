@@ -17,8 +17,8 @@ function createWindow () {
         preload:path.join(__dirname,'preload.js')
       },
     })
-    // mainWindow.loadURL(isDev?'http://localhost:3000':`file://${__dirname}/build/index.html`);
-    mainWindow.loadURL('http://localhost:3000');
+    // mainWindow.loadURL('http://localhost:3000');
+    mainWindow.loadURL(`file://${__dirname}/build/index.html`);
     mainWindow.on('closed', function () {
         mainWindow = null
     })
