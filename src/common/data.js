@@ -2,74 +2,92 @@ export const TYPE = [
     {
         "name":"一般",
         "color":"#929da3",
+        "material":'煎辣香肠'
     },
     {
         "name":"格斗",
         "color":"#ce436a",
+        "material":'酸黄瓜片'
     },
     {
         "name":"飞行",
         "color":"#8caadc",
+        "material":'生火腿'
     },
     {
         "name":"毒",
         "color":"#ac66c8",
+        "material":'面条'
     },
     {
         "name":"地面",
         "color":"#d97946",
+        "material":'火腿片'
     },
     {
         "name":"岩石",
         "color":"#c6b887",
+        "material":'小辣椒'
     },
     {
         "name":"虫",
         "color":"#90c127",
+        "material":'小番茄块'
     },
     {
         "name":"幽灵",
         "color":"#4e6caa",
+        "material":'红洋葱'
     },
     {
         "name":"钢",
         "color":"#518ea3",
+        "material":'汉堡排'
     },
     {
         "name":"火",
         "color":"#ff9d54",
+        "material":'罗勒'
     },
     {
         "name":"水",
         "color":"#4f92d6",
+        "material":'小黄瓜片'
     },
     {
         "name":"草",
         "color":"#65bd55",
+        "material":'生菜'
     },
     {
         "name":"电",
         "color":"#fad143",
+        "material":'黄椒片'
     },
     {
         "name":"超能力",
         "color":"#f97175",
+        "material":'洋葱片'
     },
     {
         "name":"冰",
         "color":"#72cfbd",
+        "material":'毛岸蟹棒'
     },
     {
         "name":"龙",
         "color":"#116ac4",
+        "material":'牛油果'
     },
     {
         "name":"恶",
         "color":"#5b5464",
+        "material":'烟熏鱼片'
     },
     {
         "name":"妖精",
         "color":"#eb92e4",
+        "material":'番茄片'
     },
 
 ];
@@ -441,67 +459,67 @@ export const POKEMON = [
     {
         id:'094',
         name:'耿鬼',
-        jineng:['幽灵','毒','妖精'],
+        moves:['幽灵','毒','妖精'],
         special:''
     },
     {
         id:'128-p',
         name:'肯泰罗',
-        jineng:['格斗','一般','超能力'],
+        moves:['格斗','一般','超能力'],
         special:''
     },
     {
         id:'128-b',
         name:'肯泰罗-火炽种',
-        jineng:['格斗','一般','火'],
+        moves:['格斗','一般','火'],
         special:''
     },
     {
         id:'128-a',
         name:'肯泰罗-水澜种',
-        jineng:['格斗','一般','水'],
+        moves:['格斗','一般','水'],
         special:''
     },
     {
         id:'130',
         name:'暴鲤龙',
-        jineng:['水','恶','飞行','冰'],
+        moves:['水','恶','飞行','冰'],
         special:''
     },
     {
         id:'134',
         name:'水伊布',
-        jineng:['一般','水'],
+        moves:['一般','水'],
         special:'秘制多'
     },
     {
         id:'135',
         name:'雷伊布',
-        jineng:['一般','电','幽灵'],
+        moves:['一般','电','幽灵'],
         special:''
     },
     {
         id:'136',
         name:'火伊布',
-        jineng:['一般','火'],
+        moves:['一般','火'],
         special:''
     },
     {
         id:'149',
         name:'快龙',
-        jineng:['龙','一般','水'],
+        moves:['龙','一般','水'],
         special:'龙之舞+buff'
     },
     {
         id:'196',
         name:'太阳伊布',
-        jineng:['一般','超能力'],
+        moves:['一般','超能力'],
         special:''
     },
     {
         id:'197',
         name:'月亮伊布',
-        jineng:['一般','恶'],
+        moves:['一般','恶'],
         special:''
     },
     {
@@ -513,344 +531,344 @@ export const POKEMON = [
     {
         id:'212',
         name:'巨钳螳螂',
-        jineng:['虫','钢','格斗'],
+        moves:['虫','钢','格斗'],
         special:''
     },
     {
         id:'214',
         name:'赫拉克罗斯',
-        jineng:['虫','格斗','一般'],
+        moves:['虫','格斗','一般'],
         special:''
     },
     {
         id:'242',
         name:'幸福蛋',
-        jineng:['妖精','一般'],
+        moves:['妖精','一般'],
         special:'秘制多'
     },
     {
         id:'248',
         name:'班基拉斯',
-        jineng:['岩石','恶'],
+        moves:['岩石','恶'],
         special:''
     },
     {
         id:'279',
         name:'大嘴鸥',
-        jineng:['飞行','水'],
+        moves:['飞行','水'],
         special:''
     },
     {
         id:'282',
         name:'沙奈朵',
-        jineng:['妖精','超能力'],
+        moves:['妖精','超能力'],
         special:''
     },
     {
         id:'286',
         name:'斗笠菇',
-        jineng:['草','格斗','飞行'],
+        moves:['草','格斗','飞行'],
         special:''
     },
     {
         id:'324',
         name:'煤炭龟',
-        jineng:['火','毒','一般'],
+        moves:['火','毒','一般'],
         special:''
     },
     {
         id:'373',
         name:'暴飞龙',
-        jineng:['龙','飞行','火','一般'],
+        moves:['龙','飞行','火','一般'],
         special:''
     },
     {
         id:'398',
         name:'姆克鹰',
-        jineng:['格斗','飞行','一般'],
+        moves:['格斗','飞行','一般'],
         special:''
     },
     {
         id:'445',
         name:'烈咬陆鲨',
-        jineng:['龙','地面','火','岩石'],
+        moves:['龙','地面','火','岩石'],
         special:''
     },
     {
         id:'450',
         name:'河马兽',
-        jineng:['地面','一般','岩石'],
+        moves:['地面','一般','岩石'],
         special:''
     },
     {
         id:'462',
         name:'自爆磁怪',
-        jineng:['电','钢','一般'],
+        moves:['电','钢','一般'],
         special:''
     },
     {
         id:'470',
         name:'叶伊布',
-        jineng:['一般','草','格斗'],
+        moves:['一般','草','格斗'],
         special:''
     },
     {
         id:'471',
         name:'冰伊布',
-        jineng:['一般','冰'],
+        moves:['一般','冰'],
         special:''
     },
     {
         id:'475',
         name:'艾路雷朵',
-        jineng:['超能力','格斗','飞行'],
+        moves:['超能力','格斗','飞行'],
         special:''
     },
     {
         id:'591',
         name:'败露球菇',
-        jineng:['草','恶','毒'],
+        moves:['草','恶','毒'],
         special:'秘制多'
     },
     {
         id:'612',
         name:'双斧战龙',
-        jineng:['龙','恶','一般','虫'],
+        moves:['龙','恶','一般','虫'],
         special:''
     },
     {
         id:'635',
         name:'三首恶龙',
-        jineng:['恶','龙'],
+        moves:['恶','龙'],
         special:''
     },
     {
         id:'637',
         name:'火神蛾',
-        jineng:['虫','火','飞行'],
+        moves:['虫','火','飞行'],
         special:''
     },
     {
         id:'663',
         name:'烈箭鹰',
-        jineng:['飞行','火','一般'],
+        moves:['飞行','火','一般'],
         special:''
     },
     {
         id:'691',
         name:'毒藻龙',
-        jineng:['龙','毒','水'],
+        moves:['龙','毒','水'],
         special:''
     },
     {
         id:'693',
         name:'钢炮臂虾',
-        jineng:['水','龙','格斗'],
+        moves:['水','龙','格斗'],
         special:''
     },
     {
         id:'700',
         name:'仙子伊布',
-        jineng:['一般','妖精'],
+        moves:['一般','妖精'],
         special:''
     },
     {
         id:'706',
         name:'黏美龙',
-        jineng:['龙','水','毒','草'],
+        moves:['龙','水','毒','草'],
         special:'特性会减速'
     },
 
     {
         id:'713',
         name:'冰岩怪',
-        jineng:['冰','钢'],
+        moves:['冰','钢'],
         special:'防御184'
     },
     {
         id:'745-d',
         name:'鬃岩狼人-黄昏的样子',
-        jineng:['岩石','恶'],
+        moves:['岩石','恶'],
         special:''
     },
     {
         id:'748',
         name:'超坏星',
-        jineng:['水','毒','虫'],
+        moves:['水','毒','虫'],
         special:''
     },
     {
         id:'778',
         name:'谜拟丘',
-        jineng:['妖精','幽灵','草'],
+        moves:['妖精','幽灵','草'],
         special:''
     },
     {
         id:'823',
         name:'钢铠鸦',
-        jineng:['钢','飞行','格斗'],
+        moves:['钢','飞行','格斗'],
         special:'磨爪+攻击'
     },
     {
         id:'871',
         name:'啪嚓海胆',
-        jineng:['电','水','毒'],
+        moves:['电','水','毒'],
         special:''
     },
     {
         id:'873',
         name:'雪绒蛾',
-        jineng:['冰','虫','飞行'],
+        moves:['冰','虫','飞行'],
         special:''
     },
     {
         id:'887',
         name:'多龙巴鲁托',
-        jineng:['幽灵','龙','电','火'],
+        moves:['幽灵','龙','电','火'],
         special:''
     },
     {
         id:'928',
         name:'奇麒麟',
-        jineng:['超能力','一般','格斗'],
+        moves:['超能力','一般','格斗'],
         special:'秘制多'
     },
     {
         id:'931',
         name:'吃吼霸',
-        jineng:['水','龙','钢'],
+        moves:['水','龙','钢'],
         special:'秘制多'
     },
     {
         id:'943',
         name:'普隆隆姆',
-        jineng:['毒','火','钢'],
+        moves:['毒','火','钢'],
         special:''
     },
     {
         id:'944',
         name:'拖拖蚓',
-        jineng:['钢','地面','岩石'],
+        moves:['钢','地面','岩石'],
         special:''
     },
     {
         id:'946-f',
         name:'一家鼠',
-        jineng:['妖精','一般','格斗'],
+        moves:['妖精','一般','格斗'],
         special:''
     },
     {
         id:'948',
         name:'浩大鲸',
-        jineng:['冰','一般','地面'],
+        moves:['冰','一般','地面'],
         special:'秘制多'
     },
     {
         id:'951',
         name:'戟脊龙',
-        jineng:['冰','龙','格斗'],
+        moves:['冰','龙','格斗'],
         special:''
     },
     {
         id:'953',
         name:'摩托蜥',
-        jineng:['一般','龙','恶'],
+        moves:['一般','龙','恶'],
         special:''
     },
     {
         id:'956',
         name:'巴布土拨',
-        jineng:['电','格斗'],
+        moves:['电','格斗'],
         special:''
     },
     {
         id:'958',
         name:'大电海燕',
-        jineng:['飞行','电','一般'],
+        moves:['飞行','电','一般'],
         special:''
     },
     {
         id:'959',
         name:'下石鸟',
-        jineng:['岩石','恶','飞行'],
+        moves:['岩石','恶','飞行'],
         special:''
     },
     {
         id:'962',
         name:'毛崖蟹',
-        jineng:['岩石','格斗','虫'],
+        moves:['岩石','格斗','虫'],
         special:''
     },
     {
         id:'965',
         name:'盐石巨灵',
-        jineng:['岩石','钢','格斗'],
+        moves:['岩石','钢','格斗'],
         special:''
     },
     {
         id:'967',
         name:'晶光花',
-        jineng:['岩石','一般','毒'],
+        moves:['岩石','一般','毒'],
         special:''
     },
     {
         id:'969',
         name:'涂标客',
-        jineng:['恶','毒','一般'],
+        moves:['恶','毒','一般'],
         special:''
     },
     {
         id:'971',
         name:'麻花犬',
-        jineng:['妖精','一般','恶'],
+        moves:['妖精','一般','恶'],
         special:''
     },
     {
         id:'973',
         name:'獒教父',
-        jineng:['恶','格斗','龙','一般'],
+        moves:['恶','格斗','龙','一般'],
         special:''
     },
     {
         id:'1002',
         name:'巨锻匠',
-        jineng:['钢','妖精','恶'],
+        moves:['钢','妖精','恶'],
         special:''
     },
     {
         id:'1004',
         name:'红莲铠骑',
-        jineng:['火','超能力','幽灵'],
+        moves:['火','超能力','幽灵'],
         special:''
     },
     {
         id:'1005',
         name:'苍炎刃鬼',
-        jineng:['火','幽灵','超能力'],
+        moves:['火','幽灵','超能力'],
         special:''
     },
     {
         id:'1007',
         name:'陆地水母',
-        jineng:['草','地面','幽灵'],
+        moves:['草','地面','幽灵'],
         special:''
     },
     {
         id:'1008',
         name:'仆刀将军',
-        jineng:['钢','恶'],
+        moves:['钢','恶'],
         special:''
     },
     {
         id:'1009',
         name:'土王',
-        jineng:['地面','毒','虫'],
+        moves:['地面','毒','虫'],
         special:'开局清buff+睡眠'
     },
     {
         id:'1010',
         name:'弃世猴',
-        jineng:['格斗','幽灵','恶'],
+        moves:['格斗','幽灵','恶'],
         special:''
     },  
 ]
