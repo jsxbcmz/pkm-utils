@@ -7,7 +7,6 @@ const fs = window.require('fs-extra');
      }
 
     await fs.readJSON(`${process.cwd()}/src/common/${name}`,(err,data)=>{
-      console.log(data)
         callback(data)
     });
    },

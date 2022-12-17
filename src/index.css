@@ -32,3 +32,11 @@ body {
 .activeType{
   border-color:  #000 !important;
 }
+
+.goodType{
+  border-color:  green !important;
+}
+
+.badType{
+  border-color:  red !important;
+}
