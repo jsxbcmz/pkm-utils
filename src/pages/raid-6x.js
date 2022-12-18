@@ -1,8 +1,6 @@
-
-
 import {useState,useEffect} from 'react';
 import {Select,Form,Checkbox,Input,Button,Popconfirm} from 'antd';
-import {TYPE,RESTRAINT,POKEMON} from '../common/data';
+import {TYPE,RESTRAINT} from '../common/data';
 import fsUtils from '../utils/fs';
 
 function Raid() {
@@ -15,18 +13,20 @@ function Raid() {
   const [e,setE] = useState([]);
 
   const [history,setHistory] = useState([]);
+  const [pokemonList,setPokemonList] = useState([]);
 
   useEffect(()=>{
     setB(matchA(a))
   },[a])
 
   useEffect(()=>{
-    setD(matchC(c,true))
-    setE(matchC(c,false))
+    setD(matchC(c,true,pokemonList))
+    setE(matchC(c,false,pokemonList))
   },[c])
 
   useEffect(()=>{
-    fsUtils.readJson('history.json',setHistory)
+    fsUtils.readJson('history.json',setHistory);
+    fsUtils.readJson('raidPokemon.json',setPokemonList);
    },[])
 
   const onFinish = (values) => {
@@ -97,7 +97,7 @@ function Raid() {
               坑宝可梦:
             </div>
             <Select style={{width:'150px'}} showSearch onChange={onChangeC} allowClear>
-              {POKEMON.map(i=><Select.Option value={i.name}>{i.name}</Select.Option>)}
+              {pokemonList.map(i=><Select.Option value={i.name}>{i.name}</Select.Option>)}
             </Select>
           </div>
           <div style={{width:'290px',marginRight:'15px'}}>
@@ -130,7 +130,7 @@ function Raid() {
      {
       c?(
         <div>
-          注意：{POKEMON.find(i=>i.name === c).special}
+          注意：{pokemonList.find(i=>i.name === c).special}
         </div>
       ) : null
      }
@@ -165,7 +165,7 @@ function Raid() {
         noStyle
       >
         <Select style={{width:'150px'}} showSearch placeholder='怪' allowClear>
-          {POKEMON.map(i=><Select.Option value={i.name}>{i.name}</Select.Option>)}
+          {pokemonList.map(i=><Select.Option value={i.name}>{i.name}</Select.Option>)}
         </Select>
       </Form.Item>
       <Form.Item
@@ -237,10 +237,10 @@ function matchA(a){
   return list;
 }
 
-function matchC(c,bool){
+function matchC(c,bool,pokemonList){
   const list = [];
   if(!c) return [];
-  const g = POKEMON.find(i=>i.name === c).moves;
+  const g = pokemonList.find(i=>i.name === c).moves;
 
   g.forEach(i=>{
     Object.keys(RESTRAINT[i]).forEach(j=>{
@@ -254,11 +254,11 @@ function matchC(c,bool){
 
       const v = t.find(tItem=>tItem.name === c);
       if(v){
-        v.num *=(bool ?2:0.5);
+        v.num +=v.num;
       }else{
         t.push({
           name:c,
-          num:bool?2:0.5
+          num:1
         })
       }
     
